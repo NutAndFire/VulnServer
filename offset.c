@@ -39,7 +39,6 @@ int main() {
     return -1;
   }
   send(sock, buffer, strlen(buffer), 0);
-  printf("Buffer sent: %d bytes \n", strlen(buffer));
   close(sock);
 
   return 0;

